@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Support — Tweet Preview for X (Twitter)</title>
+<meta name="description" content="Support and FAQ for the Tweet Preview for X (Twitter) Chrome extension.">
+<link rel="icon" type="image/png" href="/assets/icon128.png">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body { background: #fff; color: #111;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased; font-size: 16px; line-height: 1.65; }
+  .page { max-width: 680px; margin: 0 auto; padding: 64px 24px 120px; }
+  .brand { display: flex; align-items: center; gap: 12px; margin-bottom: 6px; }
+  .brand img { width: 28px; height: 28px; border-radius: 7px; }
+  .brand span { font-weight: 700; font-size: 16px; }
+  h1 { font-size: 30px; font-weight: 800; letter-spacing: -0.02em; margin-top: 18px; }
+  .sub { color: #666; margin-top: 8px; }
+  h2 { font-size: 18px; font-weight: 700; margin-top: 36px; margin-bottom: 8px; }
+  p { color: #444; }
+  a { color: #111; text-decoration: underline; text-underline-offset: 3px; }
+  a:hover { opacity: 0.7; }
+  a.ext::after { content: " ↗"; font-size: 0.85em; }
+  .card { background: #f7f7f7; border: 1px solid #eee; border-radius: 10px;
+          padding: 16px 18px; margin-top: 20px; }
+  .card b { display: block; margin-bottom: 4px; }
+  nav { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%);
+        background: #fff; border: 1px solid #eaeaea; border-radius: 999px;
+        padding: 6px; display: flex; gap: 4px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+  nav a { text-decoration: none; font-size: 14px; font-weight: 600; padding: 7px 16px; border-radius: 999px; }
+  nav a.on { background: #f1f1f1; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="brand"><img src="/assets/icon128.png" alt=""><span>Tweet Preview</span></div>
+  <h1>Support</h1>
+  <p class="sub">Stuck, found a bug, or want a feature? Email
+  <a href="mailto:hi@arhamamin.com">hi@arhamamin.com</a> — usually answered within a day.
+  You can also DM <a class="ext" href="https://x.com/arhamamiin">@arhamamiin</a>.</p>
+
+  <h2>Quick answers</h2>
+
+  <div class="card"><b>Where is the preview?</b>
+  Open the compose box on x.com (click Post, or press N). A "Preview" button appears in
+  the toolbar next to the Post button — click it and the panel opens. It never opens on
+  its own.</div>
+
+  <div class="card"><b>The Preview button isn't showing.</b>
+  Make sure the extension is enabled (click its toolbar icon — the switch at the top
+  should be on), then reload the x.com tab. The button appears only in compose dialogs,
+  not on the inline home-timeline composer.</div>
+
+  <div class="card"><b>Long tweets get cut off with "Show more".</b>
+  That's intentional — it's exactly what the real timeline does past 280 characters.
+  Click "Show more" in the preview to expand, "Show less" to fold it back.</div>
+
+  <div class="card"><b>Can I change the tweets shown around my draft?</b>
+  Yes — click the extension icon and paste up to four tweet links under "Timeline
+  tweets". They're fetched on your device and rendered in place.</div>
+
+  <div class="card"><b>Does it post anything or read my DMs?</b>
+  No. It only reads the compose box on the page to render the preview, entirely locally.
+  See the <a href="/privacy/">privacy policy</a> — nothing leaves your browser.</div>
+
+  <h2>When reporting a bug</h2>
+  <p>Include your Chrome version, what you were composing (text-only, media, thread,
+  reply), and a screenshot if possible. That's usually enough to fix it fast.</p>
+</div>
+<nav>
+  <a href="/">About</a>
+  <a href="/privacy/">Privacy</a>
+  <a class="on" href="/support/">Support</a>
+</nav>
+</body>
+</html>

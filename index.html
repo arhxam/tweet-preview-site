@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tweet Preview for X (Twitter) — see your tweet before you post it</title>
+<meta name="description" content="A Chrome extension that shows a live preview of your tweet right inside X — phone & desktop timeline mockup, character counter, images, videos and threads.">
+<link rel="icon" type="image/png" href="/assets/icon128.png">
+<meta property="og:title" content="Tweet Preview for X (Twitter)">
+<meta property="og:description" content="See exactly how your tweet will look on the timeline — before you post it.">
+<meta property="og:image" content="https://tweet-preview.arhamamin.com/assets/hero.png">
+<style>
+  * { margin: 0; box-sizing: border-box; }
+  body {
+    background: #fff; color: #111;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size: 16px; line-height: 1.6;
+  }
+  .page { max-width: 680px; margin: 0 auto; padding: 64px 24px 120px; }
+  .brand { display: flex; align-items: center; gap: 12px; }
+  .brand img { width: 34px; height: 34px; border-radius: 8px; }
+  h1 { font-size: 36px; font-weight: 800; letter-spacing: -0.02em; line-height: 1.15; }
+  .tagline { color: #666; margin-top: 10px; font-size: 17px; }
+  .badges { display: flex; gap: 8px; margin-top: 16px; flex-wrap: wrap; }
+  .badge { font-size: 12.5px; font-weight: 600; padding: 3px 10px; border-radius: 6px;
+           background: #f1f1f1; color: #444; }
+  .badge.dark { background: #2d2d2d; color: #fff; }
+  a { color: #111; text-decoration: underline; text-underline-offset: 3px; }
+  a:hover { opacity: 0.7; }
+  a.ext::after { content: " ↗"; font-size: 0.85em; }
+  .cta-row { margin-top: 26px; font-size: 17px; font-weight: 600; }
+  .shot { margin-top: 44px; }
+  .shot img { width: 100%; border: 1px solid #eaeaea; border-radius: 12px; display: block; }
+  .shot figcaption { color: #999; font-size: 13px; margin-top: 8px; }
+  h2 { font-size: 19px; font-weight: 700; margin-top: 52px; margin-bottom: 14px; }
+  ul { list-style: none; }
+  li { margin-bottom: 14px; }
+  li b { font-weight: 600; }
+  li span { color: #666; }
+  .fine { color: #999; font-size: 13px; margin-top: 56px; line-height: 1.6; }
+  nav { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%);
+        background: #fff; border: 1px solid #eaeaea; border-radius: 999px;
+        padding: 6px; display: flex; gap: 4px; box-shadow: 0 4px 16px rgba(0,0,0,0.06); }
+  nav a { text-decoration: none; font-size: 14px; font-weight: 600; padding: 7px 16px;
+          border-radius: 999px; }
+  nav a.on { background: #f1f1f1; }
+</style>
+</head>
+<body>
+<div class="page">
+  <div class="brand"><img src="/assets/icon128.png" alt="Tweet Preview logo"><h1>Tweet Preview</h1></div>
+  <p class="tagline">See your tweet before you post it — live, right inside X.</p>
+  <div class="badges">
+    <span class="badge dark">Chrome extension</span>
+    <span class="badge">Free</span>
+    <span class="badge">No login</span>
+    <span class="badge">No servers</span>
+  </div>
+
+  <p class="cta-row"><a class="ext" href="https://chromewebstore.google.com/detail/aaabgbgnbjljaeillcidhikalfoobjef">Add to Chrome</a></p>
+
+  <figure class="shot">
+    <img src="/assets/hero.png" alt="Tweet Preview showing a live phone-frame preview of a tweet beside X's composer">
+    <figcaption>Your draft, rendered exactly like the timeline — while you type it.</figcaption>
+  </figure>
+
+  <h2>What it does</h2>
+  <ul>
+    <li><b>Live preview inside x.com.</b> <span>A Preview button appears next to Post; click it and your draft renders in a real timeline — updating with every keystroke.</span></li>
+    <li><b>Phone and desktop frames.</b> <span>True iPhone proportions or the X web timeline in a browser window, so you see exact line breaks and image crops.</span></li>
+    <li><b>Accurate character counting.</b> <span>URLs count 23, emoji and CJK count 2 — and long posts clamp behind a working "Show more", up to 25,000 characters, just like X.</span></li>
+    <li><b>Media, threads, replies.</b> <span>Images, videos and GIFs appear instantly; threads stack with the connector line; replies show "Replying to".</span></li>
+    <li><b>Your timeline context.</b> <span>Paste any tweet links and they're fetched on your device and rendered around your draft.</span></li>
+  </ul>
+
+  <h2>Privacy</h2>
+  <p style="color:#666">No account, no analytics, no third-party servers — everything runs locally in your
+  browser. <a href="/privacy/">Read the privacy policy</a>.</p>
+
+  <h2>Support</h2>
+  <p style="color:#666">Questions or bugs → <a href="/support/">support</a>, or email
+  <a href="mailto:hi@arhamamin.com">hi@arhamamin.com</a>.</p>
+
+  <p class="fine">Built by <a class="ext" href="https://arhamamin.com">Arham Amin</a> ·
+  <a class="ext" href="https://x.com/arhamamiin">@arhamamiin</a><br>
+  Not affiliated with or endorsed by X Corp. "X" and "Twitter" are trademarks of X Corp.,
+  used solely to describe compatibility.</p>
+</div>
+<nav>
+  <a class="on" href="/">About</a>
+  <a href="/privacy/">Privacy</a>
+  <a href="/support/">Support</a>
+</nav>
+</body>
+</html>
